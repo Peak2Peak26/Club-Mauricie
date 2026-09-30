@@ -31,8 +31,8 @@ a{display:inline-block;background:#B8BABC;color:#2E3235;text-decoration:none;pad
 // autorisent uniquement l'envoi via le template configuré, avec des
 // destinataires déjà fixés dans EmailJS — pas de risque à les exposer ici.
 var EMAILJS_PUBLIC_KEY  = 'v2EsCCD55O3D8WsVc';
-var EMAILJS_SERVICE_ID  = 'service_XXXXXXX'; // ⚙️ nouveau service Gmail clubmotoneigep2p@gmail.com
-var EMAILJS_TEMPLATE_ID = 'template_XXXXXXX'; // ⚙️ template du club
+var EMAILJS_SERVICE_ID  = 'service_k9mxv9c';
+var EMAILJS_TEMPLATE_ID = 'template_w2cr1y4';
 
 (function(){ emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY }); })();
 
@@ -111,6 +111,7 @@ function sendOrderNotification() {
     email: customer.email || '',
     shipping_method: 'Transporteur',
     cost: {
+      subtotal: subtotal.toFixed(2),
       shipping: LIVRAISON.toFixed(2),
       tax: taxes.toFixed(2),
       total: (avantTaxes + taxes).toFixed(2)
