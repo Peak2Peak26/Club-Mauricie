@@ -39,7 +39,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--black);background:var(--white)
 /* PRODUCT GRID */
 .product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
 .product-card{background:var(--white);border:1.5px solid var(--gray-100);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column}
-.product-card-img{width:100%;aspect-ratio:1/1;object-fit:contain;padding:14px;background:var(--gray-50)}
+.product-card-img{width:100%;aspect-ratio:1/1;object-fit:contain;padding:14px;background:#fff}
 .product-card-body{padding:16px;display:flex;flex-direction:column;gap:10px;flex:1}
 .product-card-name{font-family:'DM Serif Display',serif;font-size:19px;font-weight:400}
 .product-card-price{font-size:15px;font-weight:700;color:var(--black)}
@@ -207,7 +207,10 @@ var PRODUCTS = [
   { id:'veste-fz', name:'Veste Full Zip', price:55.00, img:'images/veste-noir.jpg', sizes:XS_ADULTE, sizeChart:'images/charte-veste.jpg', kidzId:'veste-fz-kidz',
     colors:[ { name:'Noir', img:'images/veste-noir.jpg' }, { name:'Gris Sport', img:'images/veste-gris-sport.jpg' } ] },
   { id:'veste-fz-kidz', hidden:true, name:'Veste Full Zip (Kidz)', price:52.00, sizes:S_KIDZ },
-  { id:'polo', name:'Polo Golf', price:39.00, img:'images/polo.jpg', sizes:XS_ADULTE },
+  { id:'veste-zip', name:'Veste Zippée', price:49.00, img:'images/veste-zip-charbon.jpg', sizes:XS_ADULTE,
+    colors:[ { name:'Charbon', img:'images/veste-zip-charbon.jpg' }, { name:'Cendré', img:'images/veste-zip-cendre.jpg' } ] },
+  { id:'polo', name:'Polo Golf', price:39.00, img:'images/polo.jpg', sizes:XS_ADULTE,
+    colors:[ { name:'Noir', img:'images/polo.jpg' }, { name:'Charbon', img:'images/polo-charbon.jpg' } ] },
   { id:'tuque', name:'Tuque', price:29.00, img:'images/tuque.jpg', sizes:['Unique'] },
   { id:'casquette', name:'Casquette', price:25.00, img:'images/casquette.jpg', sizes:['Unique'] },
   { id:'thermos', name:'Thermos 20 oz', price:29.00, img:'images/thermos.jpg', sizes:['Unique'] }

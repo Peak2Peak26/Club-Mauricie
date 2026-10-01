@@ -28,7 +28,8 @@ const PRODUCTS = {
   'hoodie-kidz':          { name: 'Hoodie (Kidz)',                  base: 4500, colors: ['Charbon', 'Gris Sport'] },
   'veste-fz':             { name: 'Veste Full Zip',                 base: 5500, colors: ['Noir', 'Gris Sport'] },
   'veste-fz-kidz':        { name: 'Veste Full Zip (Kidz)',          base: 5200, colors: ['Noir', 'Gris Sport'] },
-  polo:                   { name: 'Polo Golf',                      base: 3900 },
+  'veste-zip':            { name: 'Veste Zippée',                   base: 4900, colors: ['Charbon', 'Cendré'] },
+  polo:                   { name: 'Polo Golf',                      base: 3900, colors: ['Noir', 'Charbon'] },
   tuque:                  { name: 'Tuque',                          base: 2900 },
   casquette:              { name: 'Casquette',                      base: 2500 },
   thermos:                { name: 'Thermos 20 oz',                  base: 2900 }
